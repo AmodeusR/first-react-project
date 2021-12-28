@@ -5,10 +5,11 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar navbar-light bg-dark mb-4">
         <div className="container-fluid">
-        <h2 className="navbar-brand text-white">Qtd. de items únicos</h2>
+          <h2 className="navbar-brand text-white">Qtd. de items únicos &nbsp;
+          <span className="badge badge-pill badge-secondary align-left">{this.props.totalCounters}</span>
+          </h2>
         </div>
       </nav>
-
     );
   }
 }
